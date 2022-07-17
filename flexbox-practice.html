@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Practice</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+      .container * {
+        border-radius: 5px;
+      }
+      .container > *:nth-child(1) {
+        flex-basis: 75%;
+      }
+      .container > *:nth-child(2) {
+        flex-basis: 25%;
+      }
+      .abd {
+        height: 100vh;
+      }
+      .ab {
+        display: flex;
+        height: 50vh;
+      }
+      .ab > * {
+        flex-basis: 50%;
+      }
+      .a {
+        background-color: aqua;
+        /* flex-grow: 1; */
+      }
+      .b {
+        background-color: aquamarine;
+        /* flex-grow: 1; */
+      }
+      .c {
+        background-color: deeppink;
+        /* flex-grow: 1; */
+      }
+      .d {
+        background-color: deepskyblue;
+        height: 50vh;
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <di class="container">
+      <div class="abd">
+        <div class="ab">
+          <div class="a">A</div>
+          <div class="b">B</div>
+        </div>
+        <div class="d">D</div>
+      </div>
+      <div class="c">C</div>
+    </di>
+  </body>
+</html>
